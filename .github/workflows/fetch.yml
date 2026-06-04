@@ -1,15 +1,14 @@
 name: Run fetch.ipynb and Commit Changes
 
 on:
-  #schedule:
-           # m h dom mon dow
-    #- cron: '0 18 * * *'
+  schedule:
+    - cron: '0 18 * * *'
 
   workflow_dispatch: # Allows manual trigger
 
 jobs:
   run_notebook:
-    runs-on: ubuntu-latest
+    runs-on: ansible-runner
 
     steps:
     - name: Check connectivity
