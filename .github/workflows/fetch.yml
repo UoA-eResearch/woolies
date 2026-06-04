@@ -8,7 +8,7 @@ on:
 
 jobs:
   run_notebook:
-    runs-on: ansible-runner
+    runs-on: ansible
 
     steps:
     - name: Check connectivity
